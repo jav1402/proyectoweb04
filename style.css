@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+=======
+/* Body general*/
+>>>>>>> a7819e64ce0b84dfa4c29b8135134873105f3eba
 
 body {
 
@@ -12,6 +16,8 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 15px;
     margin: 0px;
 }
+
+/*opacidad imagen de fondo*/
 
 .background {
     position: fixed;
@@ -27,20 +33,16 @@ body {
 
 }
 
-.cabecera {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(5, 179, 237);
-    /*  background-image: url(pictures/balloon.jpg);
-    background-color: cornflowerblue;
-    opacity: 0.85;*/
+/* color fondo cabecera*/
+
+.cabecera {    
+    background-color: rgb(127, 170, 222);
     margin: 0px;
     position: fixed;
     top: 0;
-
-
 }
 
+/*Color titulo y fuente*/
 h1 {
     color: rgba(245, 245, 242, 0.996);
     font-size: 55px;
@@ -50,23 +52,27 @@ h1 {
     margin: 50px;
 }
 
+
+/*barra de navegacion*/
 nav a {
 
     color: rgba(255, 255, 255, 0.996);
     padding: 8px 12px;
     display: inline-block;
-
 }
 
+
+/* al pasar mouse por menu*/
 nav a:hover {
 
-    color: rgb(253, 137, 4);
+    color: rgb(2, 2, 0);
     cursor: pointer;
 }
 
+/*fondo menu y*/
 .menu {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(96, 141, 193);
     position: fixed;
     width: 100%;
     top: 150px;
@@ -74,6 +80,7 @@ nav a:hover {
 
 }
 
+/*margen para mostyrar texto Nuestros servicios principales*/
 .services-principales {
     padding-top: 250px;
 }
