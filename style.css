@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-=======
-/* Body general*/
->>>>>>> a7819e64ce0b84dfa4c29b8135134873105f3eba
 
 body {
 
