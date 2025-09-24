@@ -48,7 +48,14 @@ h1 {
     text-align: left;
     margin: 50px;
 }
-
+.texto {
+    color: rgba(15, 3, 83, 0.996);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
 
 /*barra de navegacion*/
 nav a {
@@ -80,7 +87,42 @@ nav {
     width: 100%;
     top: 150px;
 
+}
+p {
+    color: #030007;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 3;
+    margin: 40px;
 
+}
+.valor-caja {
+    width: 75%; 
+    height: auto;
+    padding: 20px; /* espacio de relleno entre el elemento y el borde */
+    margin: 40px; 
+    border: 1px solid #080808;
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #dbd8d8;
+    text-align: center;
+}
+.valor-caja img{
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.titulos_valores {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0f0125;
+    /*margin-bottom: 10px;*/
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 /*margen para mostyrar texto Nuestros servicios principales*/
