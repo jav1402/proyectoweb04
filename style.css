@@ -55,7 +55,17 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin: 20px;
+    margin-top: 250px;
 }
+.texto2 {
+    color: rgba(15, 3, 83, 0.996);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
 
 /*barra de navegacion*/
 nav a {
@@ -127,7 +137,7 @@ p {
 
 /*margen para mostyrar texto Nuestros servicios principales*/
 .services-principales {
-    padding-top: 250px;
+    padding-top: 350px;
     line-height: 1.2;
 }
 
@@ -252,4 +262,8 @@ footer {
     align-items: center;
     margin: 0px;
     padding: 20px;
+}
+.main {
+
+    
 }
