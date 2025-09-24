@@ -1,5 +1,5 @@
 /* Reset básico */
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,8 +31,9 @@ body {
 
 /* color fondo cabecera*/
 
-.cabecera {    
+.cabecera {
     background-color: rgb(127, 170, 222);
+    width: 100%;
     margin: 0px;
     position: fixed;
     top: 0;
