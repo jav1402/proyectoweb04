@@ -2,17 +2,18 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
     <title>Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+     <script src="scriptpage.js" defer></script>
   </head>
   <body>
     <div class="background"></div>
     <header>
        <div class="cabecera">
-      <h1>Mi Vuelo en Globo</h1>
+      <h1>Mi Viaje en Globo</h1>
 </div>
 <div class="menu" >
-      <nav>
+      <nav class="navegacion">
         <a href="index.html">INICIO</a>
         <a href="services.html">SERVICIOS</a>
         <a href="about.html">NOSOTROS</a>
@@ -24,7 +25,7 @@
 
     <h1>Formulario de Contacto</h1>
 
-    <form action="#" method="post" style="margin-left: 50px;">
+    <form action="#" method="post" style="margin-left: 50px;" class="contact-form">
       <div>
         <label for="nombre">Nombre:</label><br />
         <input type="text" id="nombre" name="nombre" required />
@@ -41,7 +42,7 @@
       </div>
 
       <div>
-        <button type="submit">Enviar</button>
+        <button type="submit" id="submitBtn">Enviar</button>
       </div>
     </form>
 
