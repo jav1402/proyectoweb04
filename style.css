@@ -1,45 +1,61 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
 body {
 
-    /*background-color: rgba(210, 253, 247, 0.91);*/
-    /*background-image: url(pictures/globos.jpg);*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 15px;
     margin: 0px;
+    padding: 0;
+    width: 100%;
+        background: #cdd8e6;
+        
+
+}
+.containerweb {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* altura completa de ventana */
+    
+
 }
 
-/*opacidad imagen de fondo*/
-
-.background {
+.background-img {
     position: fixed;
-    background-image: url(pictures/globos.jpg);
-    opacity: 0.5;
-    z-index: -1;
     top: 0;
-    right: 0;
-    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-
-
+    object-fit: cover; /* para que imagen cubra sin deformarse */
+    opacity: 0.5; /* transparencia deseada */
+    z-index: -110; /* detrás del contenido */
 }
 
-/* color fondo cabecera*/
+/* .container {
+    position: relative;
+    height: 100vh;
+}
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('pictures/globos.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -11;
+} */
 
 .cabecera {
     background-color: #7faade;
     width: 100%;
+    height: 120px;
     margin: 0px;
+    padding: 30px 0 70px 0;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
 }
 
-/*Color titulo y fuente*/
 h1 {
     color: rgba(245, 245, 242, 0.996);
     font-size: 55px;
@@ -47,32 +63,15 @@ h1 {
     font-weight: bold;
     text-align: left;
     margin: 50px;
+    margin-top: 15px;
+    position: fixed
 }
-.texto {
-    color: rgba(15, 3, 83, 0.996);
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-    margin-top: 250px;
-}
-.texto2 {
-    color: rgba(15, 3, 83, 0.996);
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-}
-
-
-/*barra de navegacion*/
 nav a {
 
     color: rgba(255, 255, 255, 0.996);
     padding: 8px 12px;
     display: inline-block;
+    text-decoration: underline;
 }
 
 
@@ -95,103 +94,48 @@ nav {
     background-color: rgb(96, 141, 193);
     position: fixed;
     width: 100%;
-    top: 150px;
-
-}
-p {
-    color: #030007;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 3;
-    margin: 40px;
-
-}
-.valor-caja {
-    width: 75%; 
-    height: auto;
-    padding: 20px; /* espacio de relleno entre el elemento y el borde */
-    margin: 40px; 
-    border: 1px solid #080808;
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #dbd8d8;
-    text-align: center;
-}
-.valor-caja img{
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-.titulos_valores {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #0f0125;
-    /*margin-bottom: 10px;*/
-}
-.container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-/*margen para mostyrar texto Nuestros servicios principales*/
-.services-principales {
-
-    padding-top: 350px;
-    line-height: 1.2;
-}
-
-/*Fuente y formato titulo Servicios  de viajes*/
-.services-principales>.services_title {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-    font-style: italic;
-    font-weight: bold;
-    color: #fffffffe;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-/* alineacion subtitulo */
-.h3_sub {
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fffffffe;
-
-    text-align: center;
+    font-size: 20px;
+    top: 160px;
+    z-index: 15
     ;
 
 }
 
-
-
-.divprincipales {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.servicios{
+     display: grid;
+    grid-template-columns:  1fr; /*una columna*/
     margin: 25px;
-    margin-bottom: 55px;
+  margin-top: 250px;
+    /* margin-bottom: 55px; */
     border: 10px;
-
-
+}
+/* Tablet: 2 columnas */
+@media (min-width: 600px) {
+    .servicios {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
+/* Escritorio: 4 columnas */
+@media (min-width: 900px) {
+    .servicios {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
-.infoservicios {
-    display: flex;
+.infoservicios{
+     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px;
     padding: 10px;
     margin: 25px;
+    margin-top: 20px;
     background: white;
     width: auto;
     border-radius: 14px;
     line-height: 1.5;
-
 }
-
 .infoservicios img {
     max-width: 100%;
     height: auto;
@@ -210,60 +154,69 @@ p {
 .infoservicios p h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
+    text-align: center;
+    align-items: center;
 }
 
-.election {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.712);
-    padding: 10px;
-    margin: 25px;
-    width: auto;
-    border-radius: 14px;
-    box-sizing: border-box;
-
-
-
-
-}
-
-.electioninfo {
-    width: 65%;
-    padding-left: 250px;
-    /* padding: 15px; */
-    line-height: 2.5;
-    align-content: center;
-    text-align: left;
-    box-sizing: border-box;
-
-}
-
-.electionimg {
-    /* width: 40%; */
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0;
-    padding: 30px;
-    /* align-items: center; */
-    box-sizing: border-box;
-
-}
-
-.textelection {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-}
 
 footer {
     background-color: #7faade;
-    width: auto;
+    width: 100%;
     height: 50px;
     align-items: center;
     margin: 0px;
-    padding: 20px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+   z-index: 100;
 }
+
+
+/*PEPI*/
+
+.texto {
+    color: rgba(15, 3, 83, 0.996);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    margin-top: 250px;
+}
+.texto2 {
+    color: rgba(15, 3, 83, 0.996);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+
+.valor-caja {
+    width: 75%; 
+    height: auto;
+    padding: 20px; /* espacio de relleno entre el elemento y el borde */
+    margin: 40px; 
+    border: 1px solid #080808;
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #dbd8d8;
+    text-align: center;
+}
+
+.titulos_valores {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0f0125;
+    /*margin-bottom: 10px;*/
+}
+
+/*Ana*/
+
+
 
 /* ====JEZULIN====JEZULIN====JEZULIN==== */
 /* ESTILOS SOLO PARA INDEX.HTML  */
