@@ -270,16 +270,18 @@ footer {
 @media (min-width: 600px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
   .contact-form {
-   display: flex;
+   display: block;
+   margin-top:100px ;
+    padding: 8px;
   }
  
 }
 @media (min-width: 900px) {
   .grid { grid-template-columns: repeat(3, 1fr); }
-    .contact-form {
-     display: flex;
-     flex-direction: column;
-     width: 50%;
+    .contact-form { padding: 8px;
+        margin-top: 100px;
+        display: block;
+
     }
 }
 @media (max-width: 900px) {
@@ -287,4 +289,10 @@ footer {
 }
 @media (max-width: 600px) {
   .cabecera, .navegacion, .services-principales { padding: 8px; }
+  .contact-form {
+    display: block;
+    padding: 8px;
+    margin-top: 100px;
+
+  }
 }
