@@ -229,9 +229,9 @@ footer {
 
 
 
-/* ====JEZULIN====JEZULIN====JEZULIN==== */
-/* ESTILOS SOLO PARA INDEX.HTML  */
-/* ====JEZULIN====JEZULIN====JEZULIN==== */
+/* ====JEZULIN====JEZULIN====JEZULIN====JEZULIN====JEZULIN====JEZULIN====JEZULIN========= */
+                                    /* ESTILOS SOLO PARA INDEX.HTML  */
+/* ====================JEZULIN====JEZULIN====JEZULIN====JEZULIN====JEZULIN====JEZULIN==== */
 
 
 
@@ -479,4 +479,103 @@ footer {
     .index-info-img img {
         max-width: 100%;
     }
+}
+
+/* ====JEZULIN: Botón Modo Oscuro Mejorado ==== */
+.index-dark-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #7faade;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s, color 0.4s, transform 0.2s;
+}
+
+.index-dark-btn:hover {
+    background-color: #4d79ff;
+    transform: scale(1.05);
+}
+
+/* ====JEZULIN: Botón Modo Oscuro Mejorado ==== */
+.index-dark-btn {
+    padding: 10px 18px;
+    background-color: #ffd633;
+    /* color más llamativo */
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin-right: 15px;
+    /* separación de enlaces */
+}
+
+.index-dark-btn:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* ==== Modo Oscuro Suave ==== */
+body.index-dark-mode {
+    background-color: #ececec;
+    /* gris claro */
+    color: #222;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.index-dark-mode .index-hero {
+    background: linear-gradient(to right, #d6d6d6, #f5f5f5);
+}
+
+body.index-dark-mode .index-globo-card {
+    background: #f5f5f5;
+    color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.index-dark-mode .index-info {
+    background: #e0e0e0;
+    color: #222;
+}
+
+body.index-dark-mode footer {
+    background-color: #d6d6d6;
+    color: #222;
+}
+
+/* NAV LINKS MODO CLARO */
+nav a {
+    color: #fff;
+    /* enlaces blancos en modo claro */
+    padding: 8px 12px;
+    display: inline-block;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+    /* cambio al pasar el mouse */
+}
+
+/* NAV LINKS MODO OSCURO */
+body.index-dark-mode nav a {
+    color: #000;
+    /* enlaces negros en modo oscuro */
+}
+
+body.index-dark-mode nav a:hover {
+    color: #4d79ff;
+    /* destacado al pasar el mouse */
 }

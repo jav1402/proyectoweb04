@@ -24,6 +24,8 @@
         <a href="contact.html">CONTACTO</a>
       </nav>
     </div>
+            <!-- Botón modo oscuro/claro -->
+<button id="darkModeBtn" class="index-dark-btn" aria-label="Cambiar modo oscuro">🌙 Modo Oscuro</button>
   </header>
 
   <!-- ===================================== -->
@@ -96,6 +98,24 @@
   <footer>
     <h3>@ Mi viaje en globo 2025</h3>
   </footer>
+
+<script>
+const darkBtn = document.getElementById('darkModeBtn');
+const body = document.body;
+
+darkBtn.addEventListener('click', () => {
+    body.classList.toggle('index-dark-mode');
+
+    // Cambiar texto del botón
+    if(body.classList.contains('index-dark-mode')){
+        darkBtn.textContent = '☀️ Modo Claro';
+    } else {
+        darkBtn.textContent = '🌙 Modo Oscuro';
+    }
+});
+</script>
+
+
 </body>
 
 </html>
