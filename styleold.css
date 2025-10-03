@@ -315,6 +315,28 @@ footer {
 }
 
 /*Ana*/
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-form {
+   display: block;
+   margin-top:100px ;
+    padding: 8px;
+  }
+}
+  @media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+     .contact-form { padding: 8px;
+        margin-top: 100px;
+        display: block;
 
-
+    }
+}
+@media (max-width: 600px), (max-width: 900px) {
+  .cabecera, .navegacion, .services-principales, h1 { padding: 8px; }
+  .contact-form {
+    display: block;
+    padding: 8px;
+    margin-top: 100px;
+  }
+  }
 /*Jesus*/
