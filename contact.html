@@ -3,51 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="styleold.css" />
-     <script src="scriptpage.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scriptpage.js" defer></script>
   </head>
   <body>
-    <div class="background"></div>
+    <img class="background-img" src="pictures/globos.jpg" alt="Fondo globos" />
     <header>
-       <div class="cabecera">
-      <h1>Mi Viaje en Globo</h1>
-</div>
-<div class="menu" >
-      <nav class="navegacion">
-        <a href="index.html">INICIO</a>
-        <a href="services.html">SERVICIOS</a>
-        <a href="about.html">NOSOTROS</a>
-        <a href="equip.html">EQUIPO</a>
-        <a href="contact.html">CONTACTO</a>
-      </nav>
-    </div>
+      <div class="cabecera">
+        <h1>Mi Viaje en Globo</h1>
+      </div>
+      <div class="menu">
+        <nav class="navegacion">
+          <a href="index.html">INICIO</a>
+          <a href="services.html">SERVICIOS</a>
+          <a href="about.html">NOSOTROS</a>
+          <a href="equip.html">EQUIPO</a>
+          <a href="contact.html">CONTACTO</a>
+        </nav>
+      </div>
     </header>
+    <main class="contact-main">
 
-    <h1>Formulario de Contacto</h1>
+      <section class="reservation-section">
+        <h2 class="contact-h2">
+          Formulario de contacto - Solicitar Información de Vuelo
+        </h2>
 
-    <form action="#" method="post" style="margin-left: 50px;" class="contact-form">
-      <div>
-        <label for="nombre">Nombre:</label><br />
-        <input type="text" id="nombre" name="nombre" required />
-      </div>
+        <form action="#" method="post" class="contact-form reservation-form">
+          <div>
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
 
-      <div>
-        <label for="email">Correo electrónico:</label><br />
-        <input type="email" id="email" name="email" required />
-      </div>
+          <div>
+            <label for="email">Correo electrónico:</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="fecha-preferida">Fecha preferida:</label><br />
+            <input
+              type="date"
+              id="fecha-preferida"
+              name="fecha-preferida"
+              required
+            />
+          </div>
 
-      <div>
-        <label for="mensaje">Mensaje:</label><br />
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-      </div>
+          <div>
+            <label for="num-personas">Número de personas:</label><br />
+            <select id="num-personas" name="num-personas" required>
+              <option value="">Selecciona...</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5+">5 o más personas</option>
+            </select>
+          </div>
 
-      <div>
+          <div>
+            <label for="tipo-vuelo">Tipo de experiencia:</label><br />
+            <select id="tipo-vuelo" name="tipo-vuelo" required>
+              <option value="">Selecciona...</option>
+              <option value="amanecer">Vuelo al amanecer</option>
+              <option value="atardecer">Vuelo al atardecer</option>
+              <option value="romantico">Experiencia romántica</option>
+              <option value="familiar">Experiencia familiar</option>
+            </select>
+          </div>
 
-        <button type="submit" id="submitBtn" onclick="enviarFormulario()">Enviar</button>
-      </div>
-    </form>
+          <div>
+            <label for="telefono">Teléfono de contacto:</label><br />
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+34 600 000 000"
+            />
+          </div>
 
-    <p><a href="index.html" style="margin-left: 50px;">Volver a inicio</a></p>
+          <div>
+            <label for="comentarios">Comentarios adicionales:</label><br />
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="3"
+              placeholder="Ocasión especial, preferencias, alergias, etc."
+            ></textarea>
+          </div>
+          <div>
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <div>
+            <button type="submit" id="reservationBtn" onclick="enviarReserva()">
+              Solicitar Información
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Tercer bloque: Información de contacto alternativa -->
+      <section class="contact-info-section">
+        <h2 class="contact-h2">Otras formas de contacto</h2>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>📞 Teléfono</h3>
+            <p>+34 600 123 456</p>
+            <p>Horario: 9:00 - 18:00</p>
+          </div>
+
+          <div class="contact-method">
+            <h3>📧 Email directo</h3>
+            <p>info@mivuelenglobo.com</p>
+            <p>reservas@mivuelenglobo.com</p>
+          </div>
+
+          <div class="contact-method">
+            <h3>📍 Ubicación</h3>
+            <p>Campo de vuelo principal</p>
+            <p>Segovia, España</p>
+          </div>
+
+          <div class="contact-method">
+            <h3>📱 Redes sociales</h3>
+            <p>@mivuelenglobo</p>
+            <p>Síguenos para ver fotos de vuelos</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <p><a href="index.html" style="margin-left: 50px">Volver a inicio</a></p>
 
     <footer>
       <h3>@ Mi viaje en globo 2025</h3>
