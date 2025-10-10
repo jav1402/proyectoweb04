@@ -766,8 +766,11 @@ footer {
 
 /*estilos equipo*/
 .equipo-main {
-    margin-right: 200px;
-    margin-top: 300px;
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .h2-equipo {
@@ -776,13 +779,15 @@ footer {
     color: #333;
 }
 .section-equipo {
-    margin: 50px 0;
+
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .section-equipo p {
@@ -809,60 +814,114 @@ footer {
 /* Responsive para equipo */
 @media (max-width: 768px) {
     .equipo-main {
-        margin-right: 20px;
-        margin-top: 250px;
+        margin-top: 255px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     
-    .section-equipo {
-        margin-right: 20px;
-        margin-left: 20px;
+    .section-equipo, .reservation-section {
+        display: flex;
         padding: 20px;
+        display: flex-wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
 /*estilos contacto-ana*/
 .contact-main {
-    margin-right: 200px;
     margin-top:300px;
 }
 
-.contact-h2{
+.contact-h2 {
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.reservation-section {
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    width: 70%;
 }
 
 .reservation-section .contact-form {
-    margin: 50px 0;
     padding: 20px;
     border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .reservation-form {
     margin-left: 0 !important;
+    width: 100%;
 }
 
 .reservation-form div {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .reservation-form input, 
-.reservation-form select, 
-.reservation-form textarea {
+.reservation-form select {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
 }
 
+.reservation-form textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
 .reservation-form input:focus, 
-.reservation-form select:focus, 
+.reservation-form select:focus {
+    border-color: #0057b8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
+}
+
 .reservation-form textarea:focus {
     border-color: #0057b8;
     outline: none;
+    box-shadow: 0 0 8px rgba(0, 87, 184, 0.4);
+    transform: scale(1.02);
+    transition: all 0.2s ease;
 }
 
 .reservation-form button {
@@ -881,12 +940,13 @@ footer {
 }
 
 .contact-info-section {
-    margin: 50px 0;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .contact-methods {
@@ -897,7 +957,6 @@ footer {
 }
 
 .contact-method {
-    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -932,12 +991,28 @@ footer {
 
     }
 }
-@media (max-width: 600px), (max-width: 900px) {
+/* Responsive para formularios de contacto */
+@media (max-width: 768px) {
   .cabecera, .navegacion, .services-principales, h1 { padding: 8px; }
-  .contact-form {
-    display: block;
-    padding: 8px;
-    margin-top: 100px;
+  
+  .contact-main {
+    margin-top: 250px;
+  }
+  
+  .reservation-section {
+    width: 95%;
+    padding: 20px;
+    margin: 15px auto;
+  }
+  
+  .reservation-form textarea {
+    min-height: 100px;
+    font-size: 16px;
+  }
+  
+  .reservation-form input, 
+  .reservation-form select {
+    font-size: 16px; /* Evita zoom en iOS */
   }
 }
 
