@@ -486,10 +486,9 @@ footer {
         position: absolute;
     }*/
 
-
 .valor-caja {
 
-    height: 650px;
+    height: F650px;
     padding: 20px;
     /* espacio de relleno entre el elemento y el borde */
     /*margin: 40px;*/
@@ -501,7 +500,13 @@ footer {
     text-align: center;
 
 }
-
+.btnformconoc{
+    border-radius: 10px;
+    background-attachment: rgb(63, 68, 117);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 13px;
+}
 /*.titulos_valores {
         font-size: 1.2em;
         font-weight: bold;
@@ -761,200 +766,5 @@ footer {
 
     .index-info-img img {
         max-width: 100%;
-    }
-}
-
-/*estilos equipo*/
-.equipo-main {
-    margin-right: 200px;
-    margin-top: 300px;
-}
-
-.h2-equipo {
-    margin-top: 50px;
-    text-align: center;
-    color: #333;
-}
-.section-equipo {
-    margin: 50px 0;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-equipo p {
-    margin: 15px 0;
-    line-height: 1.6;
-    color: #333;
-    font-size: 16px;
-}
-
-.section-equipo ul {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-
-.section-equipo li {
-    margin: 10px 0;
-    padding: 8px;
-    background: rgba(127, 170, 222, 0.1);
-    border-left: 4px solid #7faade;
-    border-radius: 4px;
-    font-weight: 500;
-}
-
-/* Responsive para equipo */
-@media (max-width: 768px) {
-    .equipo-main {
-        margin-right: 20px;
-        margin-top: 250px;
-    }
-    
-    .section-equipo {
-        margin-right: 20px;
-        margin-left: 20px;
-        padding: 20px;
-    }
-}
-
-/*estilos contacto-ana*/
-.contact-main {
-    margin-right: 200px;
-    margin-top:300px;
-}
-
-.contact-h2{
-    margin-top: 50px;
-    text-align: center;
-}
-
-.reservation-section .contact-form {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 250px;
-}
-
-.reservation-form {
-    margin-left: 0 !important;
-}
-
-.reservation-form div {
-    margin-bottom: 15px;
-}
-
-.reservation-form input, 
-.reservation-form select, 
-.reservation-form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-.reservation-form input:focus, 
-.reservation-form select:focus, 
-.reservation-form textarea:focus {
-    border-color: #0057b8;
-    outline: none;
-}
-
-.reservation-form button {
-    background-color: #0057b8;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.reservation-form button:hover {
-    background-color: #003f86;
-}
-
-.contact-info-section {
-    margin: 50px 0;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    margin-right: 200px;
-    margin-left: 50px;
-}
-
-.contact-methods {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.contact-method {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #e9ecef;
-}
-
-.contact-method h3 {
-    color: #0057b8;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.contact-method p {
-    margin: 5px 0;
-    color: #333;
-}
-
-/*contact responsive-ana*/
-@media (min-width: 600px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-form {
-   display: block;
-   margin-top:100px ;
-    padding: 8px;
-  }
-}
-  @media (min-width: 900px) {
-  .grid { grid-template-columns: repeat(3, 1fr); }
-     .contact-form { padding: 8px;
-        margin-top: 100px;
-        display: block;
-
-    }
-}
-@media (max-width: 600px), (max-width: 900px) {
-  .cabecera, .navegacion, .services-principales, h1 { padding: 8px; }
-  .contact-form {
-    display: block;
-    padding: 8px;
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-    .reservation-section,
-    .contact-info-section {
-        margin-right: 20px;
-        margin-left: 20px;
-        padding: 15px;
-    }
-    
-    .contact-methods {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .contact-method {
-        padding: 15px;
     }
 }
