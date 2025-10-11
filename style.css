@@ -192,7 +192,65 @@ footer {
 }
 
 
+
 /*PEPI*/
+/* Móviles: 0-600px */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+/* Tablets pequeñas: 601-900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 22px;
+        justify-content: center;
+    }
+
+}
+
+/* Tablets grandes y escritorio pequeño: 901-1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+
+}
+
+/* Escritorio grande: más de 1200px */
+@media (min-width: 1201px) {
+    .container {
+        flex-direction: row;
+        gap: 38px;
+
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    gap: 60px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.valor-caja {
+    align-items: center;
+    width: 450px;
+}
 
 .texto {
     color: rgba(15, 3, 83, 0.996);
@@ -202,33 +260,33 @@ footer {
     text-align: center;
     margin: 20px;
     margin-top: 250px;
+    position: absolute;
 }
 
-.texto2 {
-    color: rgba(15, 3, 83, 0.996);
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-}
-
-
+/*.texto2 {
+        color: rgba(15, 3, 83, 0.996);
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+        position: absolute;
+    }*/
 
 .valor-caja {
 
-    width: 75%;
-    height: auto;
+    height: F650px;
     padding: 20px;
     /* espacio de relleno entre el elemento y el borde */
-    margin: 40px;
+    /*margin: 40px;*/
+
     border: 1px solid #080808;
     border-radius: 8px;
     /* Bordes redondeados */
     background-color: #dbd8d8;
     text-align: center;
-}
 
+}
 .btnformconoc{
     border-radius: 10px;
     background-attachment: rgb(63, 68, 117);
@@ -241,6 +299,7 @@ footer {
         font-weight: bold;
         color: #0f0125;
         /*margin-bottom: 10px;*/
+
 
 /*Ana*/
 
