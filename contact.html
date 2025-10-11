@@ -23,12 +23,19 @@
       </div>
     </header>
     <main class="contact-main">
-
-      <section class="reservation-section">
+      <!-- Botón de modo oscuro -->
+      <div class="dark-mode-toggle">
+        <button id="darkModeBtn" class="dark-mode-btn" title="Cambiar tema">
+          🌙 Modo oscuro
+        </button>
+      </div>
+      
+      <div class="div-contact">
         <h2 class="contact-h2">
           Formulario de contacto - Solicitar Información de Vuelo
         </h2>
-
+      </div>
+      <section class="reservation-section">
         <form action="#" method="post" class="contact-form reservation-form">
           <div>
             <label for="nombre">Nombre:</label><br />
@@ -96,7 +103,7 @@
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
           </div>
           <div>
-            <button type="submit" id="reservationBtn" onclick="enviarReserva()">
+            <button type="submit" id="reservationBtn">
               Solicitar Información
             </button>
           </div>
