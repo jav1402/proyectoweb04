@@ -1,121 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mi Vuelo en Globo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Mi Vuelo en Globo</title>
-</head>
+  <body>
+    <div class="background"></div>
 
-<body>
-  <div class="background"></div>
+    <header>
+      <div class="cabecera">
+        <h1>GLOBITOS MUY BONITOS</h1>
+      </div>
+      <div class="menu">
+        <nav>
+          <a href="index.html">INICIO</a>
+          <a href="services.html">SERVICIOS</a>
+          <a href="about.html">NOSOTROS</a>
+          <a href="equip.html">EQUIPO</a>
+          <a href="contact.html">CONTACTO</a>
+        </nav>
+      </div>
+      <!-- Botón modo oscuro/claro -->
+      <button
+        id="darkModeBtn"
+        class="index-dark-btn"
+        aria-label="Cambiar modo oscuro"
+      >
+        🌙 Modo Oscuro
+      </button>
+    </header>
 
-  <header>
-    <div class="cabecera">
-      <h1>GLOBITOS MUY BONITOS</h1>
+    <!-- ===================================== -->
+    <!-- GLOBOS ANIMADOS (solo para index) -->
+    <!-- Mantener prefijo index- para evitar conflictos -->
+
+    <div class="index-balloons" aria-hidden="true">
+      <span class="index-balloon index-balloon--red"></span>
+      <span class="index-balloon index-balloon--blue"></span>
+      <span class="index-balloon index-balloon--yellow"></span>
+      <span class="index-balloon index-balloon--green"></span>
+      <span class="index-balloon index-balloon--pink"></span>
+      <span class="index-balloon index-balloon--orange"></span>
     </div>
-    <div class="menu">
-      <nav>
-        <a href="index.html">INICIO</a>
-        <a href="services.html">SERVICIOS</a>
-        <a href="about.html">NOSOTROS</a>
-        <a href="equip.html">EQUIPO</a>
-        <a href="contact.html">CONTACTO</a>
-      </nav>
-    </div>
-            <!-- Botón modo oscuro/claro -->
-<button id="darkModeBtn" class="index-dark-btn" aria-label="Cambiar modo oscuro">🌙 Modo Oscuro</button>
-  </header>
+    <!-- ===================================== -->
 
-  <!-- ===================================== -->
-  <!-- GLOBOS ANIMADOS (solo para index) -->
-  <!-- Mantener prefijo index- para evitar conflictos -->
+    <main class="index-main">
+      <!-- Hero -->
+      <section class="index-hero">
+        <h2>Bienvenido a la aventura</h2>
+        <p>Descubre la magia de volar en globo con nosotros</p>
+      </section>
 
-  <div class="index-balloons" aria-hidden="true">
-    <span class="index-balloon index-balloon--red"></span>
-    <span class="index-balloon index-balloon--blue"></span>
-    <span class="index-balloon index-balloon--yellow"></span>
-    <span class="index-balloon index-balloon--green"></span>
-    <span class="index-balloon index-balloon--pink"></span>
-    <span class="index-balloon index-balloon--orange"></span>
-  </div>
-  <!-- ===================================== -->
+      <!-- Grid con globos -->
+      <section class="index-globos">
+        <div class="index-globo-card">
+          <img src="pictures/tour.png" alt="Capadocia: Excursión" />
+          <h3>Capadocia: Excursión</h3>
+          <p>Un viaje relajante por los cielos despejados.</p>
+        </div>
+        <div class="index-globo-card">
+          <img src="pictures/VIP1.png" alt="Globo por Luxor" />
+          <h3>En Globo por Luxor</h3>
+          <p>Perfecto para vivir emociones intensas.</p>
+        </div>
+        <div class="index-globo-card">
+          <img src="pictures/clientes.png" alt="Regalo en Globo" />
+          <h3>Regala un Viaje en Globo</h3>
+          <p>Ideal para disfrutar con toda la familia.</p>
+        </div>
+        <div class="index-globo-card">
+          <img src="pictures/globo_lago.png" alt="Experiencia en Globo" />
+          <h3>Experiencia Globera</h3>
+          <p>Conecta con la naturaleza desde lo alto.</p>
+        </div>
+      </section>
 
-  <main class="index-main">
-    <!-- Hero -->
-    <section class="index-hero">
-      <h2>Bienvenido a la aventura</h2>
-      <p>Descubre la magia de volar en globo con nosotros</p>
-    </section>
+      <!-- Flex final -->
+      <section class="index-info">
+        <div class="index-info-text">
+          <h2>¿Por qué elegirnos?</h2>
+          <p>
+            Con más de <strong>10 años de experiencia</strong>, somos líderes en
+            vuelos en globo aerostático en España. Nos destacamos por nuestro
+            <strong>compromiso con la seguridad</strong>, utilizando equipos
+            modernos y revisados periódicamente. Nuestros pilotos cuentan con
+            <strong>certificaciones internacionales</strong> y una amplia
+            trayectoria en vuelos turísticos. Cada experiencia está diseñada
+            para combinar
+            <strong>profesionalidad, emoción y paisajes inolvidables</strong>,
+            creando recuerdos que duran toda la vida. Además, apostamos por un
+            <strong>turismo sostenible</strong>, respetando siempre la
+            naturaleza y los entornos donde volamos.
+          </p>
+          <ul class="index-beneficios">
+            <li>Servicio personalizado y atención previa y post-vuelo.</li>
+            <li>Protocolos de seguridad y revisión pre-vuelo documentada.</li>
+            <li>Opciones para familias, parejas y eventos privados.</li>
+          </ul>
+        </div>
+        <div class="index-info-img">
+          <img src="pictures/VIP.png" alt="Vuelo en globo" />
+        </div>
+      </section>
+    </main>
 
-    <!-- Grid con globos -->
-    <section class="index-globos">
-      <div class="index-globo-card">
-        <img src="pictures/tour.png" alt="Capadocia: Excursión">
-        <h3>Capadocia: Excursión</h3>
-        <p>Un viaje relajante por los cielos despejados.</p>
-      </div>
-      <div class="index-globo-card">
-        <img src="pictures/VIP1.png" alt="Globo por Luxor">
-        <h3>En Globo por Luxor</h3>
-        <p>Perfecto para vivir emociones intensas.</p>
-      </div>
-      <div class="index-globo-card">
-        <img src="pictures/clientes.png" alt="Regalo en Globo">
-        <h3>Regala un Viaje en Globo</h3>
-        <p>Ideal para disfrutar con toda la familia.</p>
-      </div>
-      <div class="index-globo-card">
-        <img src="pictures/globo_lago.png" alt="Experiencia en Globo">
-        <h3>Experiencia Globera</h3>
-        <p>Conecta con la naturaleza desde lo alto.</p>
-      </div>
-    </section>
+    <footer>
+      <h3>@ Mi viaje en globo 2025</h3>
+    </footer>
 
-    <!-- Flex final -->
-    <section class="index-info">
-      <div class="index-info-text">
-        <h2>¿Por qué elegirnos?</h2>
-        <p>Con más de <strong>10 años de experiencia</strong>, somos líderes en vuelos en globo aerostático en España.  
-          Nos destacamos por nuestro <strong>compromiso con la seguridad</strong>, utilizando equipos modernos y revisados periódicamente.  
-          Nuestros pilotos cuentan con <strong>certificaciones internacionales</strong> y una amplia trayectoria en vuelos turísticos.  
-          Cada experiencia está diseñada para combinar <strong>profesionalidad, emoción y paisajes inolvidables</strong>, creando recuerdos que duran toda la vida.  
-          Además, apostamos por un <strong>turismo sostenible</strong>, respetando siempre la naturaleza y los entornos donde volamos.  
-        </p>
-        <ul class="index-beneficios">
-          <li>Servicio personalizado y atención previa y post-vuelo.</li>
-          <li>Protocolos de seguridad y revisión pre-vuelo documentada.</li>
-          <li>Opciones para familias, parejas y eventos privados.</li>
-        </ul>
-      </div>
-      <div class="index-info-img">
-        <img src="pictures/VIP.png" alt="Vuelo en globo">
-      </div>
-    </section>
-  </main>
+    <script>
+      const darkBtn = document.getElementById("darkModeBtn");
+      const body = document.body;
 
-  <footer>
-    <h3>@ Mi viaje en globo 2025</h3>
-  </footer>
+      darkBtn.addEventListener("click", () => {
+        body.classList.toggle("index-dark-mode");
 
-<script>
-const darkBtn = document.getElementById('darkModeBtn');
-const body = document.body;
-
-darkBtn.addEventListener('click', () => {
-    body.classList.toggle('index-dark-mode');
-
-    // Cambiar texto del botón
-    if(body.classList.contains('index-dark-mode')){
-        darkBtn.textContent = '☀️ Modo Claro';
-    } else {
-        darkBtn.textContent = '🌙 Modo Oscuro';
-    }
-});
-</script>
-
-
-</body>
-
+        // Cambiar texto del botón
+        if (body.classList.contains("index-dark-mode")) {
+          darkBtn.textContent = "☀️ Modo Claro";
+        } else {
+          darkBtn.textContent = "🌙 Modo Oscuro";
+        }
+      });
+    </script>
+  </body>
 </html>
